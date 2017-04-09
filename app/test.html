@@ -1,0 +1,15 @@
+<ul class="media-list">
+                  <li class="media" ng-repeat="dish in dishCtrl.dishes">
+                    <div class="media-left media-middle">
+                      <a href=""><img class="media-object img-thumbnail" ng-src="{{dish.image}}" alt="uthapizza"></a>
+                    </div>
+                    <div class="media-body">
+                      <h2 class="media-heading">
+                        {{dish.heading}}
+                        <span class="label label-danger">{{dish.label}}</span>
+                        <span class="badge">{{dish.price}}</span>
+                      </h2>
+                      <p>{{dish.description}}</p>
+                    </div>
+                  </li> 
+                </ul>
